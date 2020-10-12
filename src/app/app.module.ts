@@ -15,6 +15,8 @@ import { SearchcardComponent } from './components/shared/searchcard/searchcard.c
 import { SearchqueryPipe } from './pipes/searchquery.pipe';
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { CarouselComponent } from './components/shared/carousel/carousel.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -28,13 +30,15 @@ import { CarouselComponent } from './components/shared/carousel/carousel.compone
     SearchcardComponent,
     SearchqueryPipe,
     NoimagePipe,
-    CarouselComponent
+    CarouselComponent,
+    FooterComponent
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
     
   ],
   providers: [],

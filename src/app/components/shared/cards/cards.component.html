@@ -1,14 +1,14 @@
 
-<div class="row row-cols-3 row-cols-md-6 m-5">
+<div class="row row-cols-3 row-cols-md-6  mb-5">
   <div 
     *ngFor="let movie of movies;let i=index"
-    class="col mb-1">
+    class="col mb-1 mt-4">
     <div 
       (click)="getMovieDetails(movie['id'])" 
-      class="card h-100 puntero">
+      class="card h-100 puntero bg-transparent border-orange">
       <img [src]="imgRoot+movie['poster_path']" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title italic">{{movie["title"]}}</h5>
+      <div class="">
+        <h5 class="card-title italic text-center mt-2" style="color: floralwhite;">{{movie["title"]}}</h5>
         <!-- <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p> -->
       </div>
     </div>

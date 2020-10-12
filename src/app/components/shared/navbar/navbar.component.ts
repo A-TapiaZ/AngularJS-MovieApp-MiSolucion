@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { MoviesService } from '../../../providers/movies.service';
 
@@ -16,15 +17,13 @@ export class NavbarComponent implements OnInit {
 
   search(termino:string){
 
-    // TODO: Llevarlo a un pipe(?)
-    let list: Array<string> = [];
+    console.log(termino);
+    
+    if(termino.length===0){
+      return;
+    }
 
-    list=termino.split(' ');
-    console.log(termino.split(' '));
-    console.log(list.join('%20'));
-
-    this.moviesService.updateBusquedaNav(list.join('%20'));
-    this.router.navigate(['/search']);
+    this.router.navigate(['/search',termino]);
   }
 
 }

@@ -34,15 +34,16 @@ export class MoviesService {
   }
 
   searchMovie(busqueda:string){
+
+    let list: Array<string> = [];
+
+    list=busqueda.split(' ');
+    console.log(busqueda.split(' '));
+    busqueda = list.join('%20');
+    console.log(busqueda);
+
     return this.http.get(`${this.rootURL}/search/movie?api_key=${this.api_key}&language=es-ES&query=${busqueda}&page=1&include_adult=false`)
   }
 
-  updateBusquedaNav(busqueda:string){
-    this.busquedaNavBar=busqueda;
-  }
-
-  BusquedaNav(){
-    return this.busquedaNavBar;
-  }
 }
 

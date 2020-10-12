@@ -1,4 +1,4 @@
-<div class="container mt-4">
+<div *ngIf="movieDetails"  class="micontainer">
   
   <div class="row">
     
@@ -6,16 +6,17 @@
       <img class="img-fluid" [src]="imgRoot+movieDetails['poster_path']" alt="movie_poster">
     </div>
     
-    <div class="col-md-6 mt-1">
+    <div class="col-md-6 mt-1" style="color: floralwhite;">
 
       <h3> {{movieDetails['title']}} </h3>
-      <br>
+      <hr style="background-color: floralwhite;">
 
       <p> {{movieDetails['overview']}} </p>
       <br>
 
-      <h5>Vote average: {{movieDetails['vote_average']}}/10 </h5>
-      
+      <h5> Vote average: <span class="badge badge-light">{{movieDetails['vote_average']}}/10</span></h5>
+      <h5> Total votes: <span class="badge badge-light">{{movieDetails['vote_count']}}</span></h5>
+      <br>
       <button 
         (click)="backClicked()"
         class="btn btn-outline-primary col-md-4  ">

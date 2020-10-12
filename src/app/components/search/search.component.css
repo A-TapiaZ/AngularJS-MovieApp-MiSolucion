@@ -1,3 +1,13 @@
 .bgdark {
   background-color: rgb(13, 37, 63) 
 }
+
+.containerSearch{
+  margin-top: 100px  !important;
+  margin-left: 9% !important; 
+  margin-right: 9% !important;
+}
+
+.micontainer{
+  margin: 2% 10% 10% 10%;
+}

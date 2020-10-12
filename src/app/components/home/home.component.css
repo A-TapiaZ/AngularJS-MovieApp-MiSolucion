@@ -3,5 +3,9 @@
 }
 
 .titulo{
-  border:dotted;
+  border:none;
+}
+
+.micontainer{
+  margin: 2% 14% 10% 14%;
 }
