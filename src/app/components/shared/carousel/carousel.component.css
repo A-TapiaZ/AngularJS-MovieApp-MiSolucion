@@ -1,0 +1,18 @@
+
+.item {
+  /* display: block; */
+  width: 100%;
+  height: 700px; 
+}
+.item img {
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-caption{ 
+  top: 400px;
+  bottom: 0px;
+  text-align: initial;
+  padding: 0px;
+  font-style: italic;
+}

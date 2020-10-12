@@ -1,0 +1,9 @@
+.bgdark {
+  background-color: rgb(13, 37, 63);
+  color: aliceblue;
+  border-color: aliceblue;
+}
+
+.card-columns {
+  column-count: 6;
+  }

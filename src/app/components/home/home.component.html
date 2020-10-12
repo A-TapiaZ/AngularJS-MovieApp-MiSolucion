@@ -1,0 +1,36 @@
+
+<!-- TODO: Mover esto a un componente nuevo -->
+<!-- TODO: Ajustar la imagen al ancho -->
+
+<!--Peliculas en cartelera  -->
+
+<app-carousel
+  [nowPlayingMovies]="nowPlayingMovies"
+  [imgRoot]="imgRoot"
+></app-carousel>
+
+
+<!-- Paliculas populares -->
+
+  <h1 
+    class="titulo mt-4 text-center bgdark"
+    style="color: cornsilk;"
+    >Peliculas populares</h1>
+
+    <app-cards
+      [movies]="popularMovies"
+    ></app-cards>
+
+<!-- Paliculas populares infantiles-->
+
+<h1 class="titulo text-center bgdark" style="color:cornsilk;">Peliculas populares infantiles</h1>
+
+<div class="">
+  <app-cards
+    [movies]="childrenMovies"
+  ></app-cards>
+</div>
+
+
+
+
